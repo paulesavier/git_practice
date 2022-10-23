@@ -1,0 +1,171 @@
+html {
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    color: seashell;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h4 {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.45rem;
+    border-bottom: 0.3px solid rgb(83, 82, 82);
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: inline;
+}
+
+nav a {
+    color: rgb(136, 133, 133);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.logo {
+    font-family: "Berkshire Swash", serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(136, 133, 133);
+}
+
+#mission {
+    display: flex;
+    align-items: center;
+    width: 60rem;
+    height: 35rem;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*7u0jn4*_ga*Mjk3NTUxNTQxMS4xNjYwOTIwMTgw*_ga_3LRZM6TM9L*MTY2NDEwNjk3MC43Mi4wLjE2NjQxMDY5NzAuNjAuMC4w");
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.banner {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+    #mission {
+        width: 100%;
+    }
+
+    .banner {
+        flex-wrap: wrap;
+    }
+}
+
+.imgcontainer {
+    display: flex; 
+    flex-basis: 50rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgcontainer img {
+    height: 10rem;
+    width: 15rem;
+}
+
+figcaption {
+    padding-top: 0.5rem;
+}
+
+figure {
+    flex-shrink: 1;
+}
+
+.locations {
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*8fk2rq*_ga*Mjk3NTUxNTQxMS4xNjYwOTIwMTgw*_ga_3LRZM6TM9L*MTY2NDEwNjk3MC43Mi4wLjE2NjQxMDY5NzAuNjAuMC4w");
+    background-size: cover;
+    background-position: center;
+    width: 60rem;
+    height: 25rem;
+    margin: 0 auto;
+}
+
+.locations h2 {
+    padding: 30px;
+}
+
+#locations {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.location {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+    .locations {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #locations {}
+}
+
+.dummy-div {
+    height: 200px;
+  }
+  
+footer {
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.mid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 30px;
+    height: 200px;
+  }
+  
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+  }
